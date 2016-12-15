@@ -14,7 +14,7 @@ import java.util.List;
 3. Используя метод printList выведи эти три списка на экран. Сначала тот, который для x%3, потом тот, который для x%2, потом последний.
 тест
 */
-
+//Ghbdtn
 public class Solution
 {
     public static void main(String[] args) throws Exception
