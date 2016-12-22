@@ -6,6 +6,7 @@ package com.javarush.test.level25.lesson02.home01;
 Создавать дополнительные поля нельзя.
 Метод main не участвует в тестировании.
 */
+/*
 public class Solution {
     /**
      * Output:
@@ -16,7 +17,7 @@ public class Solution {
      * --------------------
      * Available Amount
      * Bank Name
-     */
+     *//*
     public static void main(String[] args) {
 
         Column.configureColumns(Column.Amount, Column.AccountNumber, Column.BankName);
@@ -33,3 +34,4 @@ public class Solution {
         }
     }
 }
+*/

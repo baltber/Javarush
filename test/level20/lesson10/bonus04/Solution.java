@@ -49,7 +49,7 @@ import java.util.List;
 Доступ по индексу запрещен, воспользуйтесь при необходимости UnsupportedOperationException
 Должно быть наследование AbstractList<String>, List<String>, Cloneable, Serializable
 Метод main в тестировании не участвует
-*/
+*//*
 public class Solution {
     public static void main(String[] args) {
         List<String> list = new Solution();
@@ -65,4 +65,4 @@ public class Solution {
         //have to be implemented
         return null;
     }
-}
+}*/

@@ -8,6 +8,7 @@ super secret key, Thread-0, it's an example
 2. Разберитесь в последовательности выполняемого кода и обеспечьте логирование возникновения исключения в п.1.
 3. Метод main в тестировании не участвует.
 */
+/*
 public class Solution {
 
     public static void main(String[] args) {
@@ -31,4 +32,4 @@ public class Solution {
     }
 
 }
-
+*/

@@ -2,7 +2,7 @@ package com.javarush.test.level25.lesson07.home01;
 
 /* Не валять дурака
 Восстановите логику класса TaskManipulator.
-*/
+*//*
 public class Solution
 {
     /*
@@ -14,7 +14,7 @@ public class Solution
      second
      third
      fifth
-     */
+     *//*
     public static void main(String[] args) throws InterruptedException {
         CustomThreadManipulator manipulator = new TaskManipulator();
 
@@ -37,4 +37,4 @@ public class Solution
         Thread.sleep(1);
         manipulator.stop();
     }
-}
+}*/
