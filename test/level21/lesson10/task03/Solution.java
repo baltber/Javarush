@@ -39,7 +39,8 @@ public class Solution {
         List<String> strings = new ArrayList<>();
         Charset charset = Charset.forName("UTF-8");
         Path filePath = Paths.get(path);
-        try (BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(new FileInputStream(path)))) {
+        try (BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(new FileInputStream(path))))
+        {
             String sCurrentLine;
             while ((sCurrentLine = bufferedReader.readLine()) != null) {
                 strings.add(sCurrentLine);
@@ -72,7 +73,11 @@ public class Solution {
     public static class SpecificUtilizator extends Utilizator {
         @Override
         public void dispose() {
-            util.throwException();
+            try
+            {
+                util.throwException();
+            }
+            catch (RuntimeException r) {}
         }
     }
 

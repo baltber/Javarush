@@ -1,4 +1,4 @@
-package com.javarush.test.level20.lesson10.home08;
+package com.Javarush.test.level20.lesson10.home08;
 
 /* Правильный вывод
 Расставить обращение к методам суперкласса и модификаторы доступа так, чтобы вывод на экран был следующим:

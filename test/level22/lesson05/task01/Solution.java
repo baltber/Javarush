@@ -10,21 +10,43 @@ package com.javarush.test.level22.lesson05.task01;
 Метод main не участвует в тестировании.
 */
 public class Solution {
-    public static String getPartOfString(String string) throws TooShortStringException {
-        String [] spl = string.split(" ");
-        if(spl.length<5){
-           throw new TooShortStringException();
-        } else{
-        String s = spl[1]+" "+spl[2]+" "+spl[3]+" "+spl[4];
-            return s;
-        }
+    public static void main(String[] args)
+    {   try{
+        String s = "JavaRush - лучший сервис обучения Java.";
+        System.out.println(getPartOfString(s));}
+    catch (TooShortStringException e){
 
     }
-
-    public static class TooShortStringException extends Exception{
     }
-    public static void main (String[] args) throws TooShortStringException
+
+    public static String getPartOfString(String string) throws TooShortStringException
     {
-        System.out.println(getPartOfString("JavaRush - лучший сервис обучения Java."));
+        if (string == null || string.isEmpty()) {
+            throw new TooShortStringException();
+        }
+        int firstSpace = string.indexOf(" ") + 1;
+        char[] chars = string.toCharArray();
+        int spacesCounter = 0;
+        int indexOfLastSpace = 0;
+        for (int i = 0; i < string.length(); i++) {
+            if (chars[i] == ' ') {
+                spacesCounter++;
+                if (spacesCounter == 4) {
+                    indexOfLastSpace = string.length();
+                }
+                else if (spacesCounter == 5) {
+                    indexOfLastSpace = i;
+                    break;
+                }
+            }
+        }
+        if (spacesCounter < 4) {
+            throw new TooShortStringException();
+        }
+        return string.substring(firstSpace, indexOfLastSpace);
+    }
+
+
+    public static class TooShortStringException extends Throwable{
     }
 }
